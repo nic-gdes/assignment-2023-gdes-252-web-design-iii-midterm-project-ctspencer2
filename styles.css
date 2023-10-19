@@ -1,17 +1,100 @@
-#main {
-    margin: 0 auto;
-    font-family: "Arial", Helvetica, sans-serif;
-    font-weight: normal;
-    font-size: 16px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    background-color: #F7F1ED;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 18px;
+    font-weight: normal;
 }
 
 h3 {
     font-size: 18px;
 }
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.pill {
+    font-size: 12px;
+    border: 1px solid #333;
+    background-color: #ffffff00;
+    border-radius: 25px;
+    width: 56px;
+    height: 24px;
+}
+
+li {
+    list-style: none;
+}
+
+#main-container {
+    width: 90%;
+    margin: 1rem auto;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+#header {
+    text-align: center;
+}
+
+.logo-gdesnews img {
+    margin-bottom: 2rem;
+    width: 50%;
+}
+
+#header h1 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+nav {
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+    padding: 10px;
+    text-align: center;
+}
+/* Headlines */
 
 
 
