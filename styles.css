@@ -15,6 +15,10 @@ body {
     line-height: 1.5;
     color: #333;
     background-color: #F7F1ED;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,11 +32,13 @@ h1 {
 
 h2 {
     font-size: 18px;
-    font-weight: normal;
+    font-weight: bold;
+    margin-bottom: 2rem;
 }
 
 h3 {
     font-size: 18px;
+    margin-bottom: 2rem;
 }
 
 a {
@@ -49,57 +55,174 @@ a {
     height: 24px;
 }
 
+.pill-active {
+    background-color: #98002E;
+    color: #F7F1ED;
+    border: 1px solid #98002E;
+
+}
+
 li {
     list-style: none;
 }
 
 #main-container {
-    width: 90%;
-    margin: 1rem auto;
-    padding: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 /* Header */
 #header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 2rem 4rem 2rem;
     text-align: center;
+    width: 90%;
 }
 
 .logo-gdesnews img {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     width: 50%;
 }
 
 #header h1 {
     font-size: 2rem;
     font-weight: normal;
-}
-
-nav {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
 }
 
+nav ul li:not(:last-child) {
+    margin-right: 1rem;
+}
+
 nav li {
-    margin: 0 10px;
-    padding: 10px;
     text-align: center;
 }
-/* Headlines */
 
+@media screen and (min-width: 668px) {
+    #header {
+        align-items: start;
+        text-align: start;
+    }
+}
+
+/* Headlines */
+#news-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 8rem;
+}
+
+.news-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.news-article h2 {
+    margin-bottom: 2rem;
+}
+
+#break-line {
+    height: 1px;
+    background: #98002E;
+}
+
+@media screen and (min-width: 668px) {
+    #news-grid {
+        grid-template-columns: 1fr 1fr .5fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #break-line {
+        display: none;
+    }
+
+    #mars {
+        grid-column: 2;
+    }
+
+    #coffee {
+        grid-column: 1;
+    }
+}
+
+
+/* About */
+#about-wrapper {
+    background-color: #F4E2D6;
+    width: 100%;
+}
+
+#about {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-container{
+    margin-bottom: 3rem;
+}
+
+.link-button {
+    font-size: 18px;
+    margin-top: 2rem;
+    width: 364px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    background-color: #98002E;
+    display: flex;
+    border-radius: 25px;
+}
 
 
 /* Images */
 .img-365 {
-    width: 365.5px;
-    height: 365.5px;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#about-img {
+    width: 100%;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #98002E;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    flex-direction: column;
+    color: white;
+    font-size: 14px;
+}
+
+footer img {
+    width: 188px;
+    height: 32px;
+    margin-bottom: 1rem;
 }
