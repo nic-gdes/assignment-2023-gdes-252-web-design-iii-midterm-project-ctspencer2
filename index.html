@@ -7,22 +7,27 @@
     <title>GDES News</title>
 </head>
 <body>
-    <div id="main-container">
+    <main id="main-container">
         <section id="header">
-            <div class="logo-gdesnews">
-                <img src="./gdes_news_images/logo-gdesnews.png" alt="">
+            <div class="logo-nav">
+                <div class="logo-gdesnews">
+                    <img src="./gdes_news_images/logo-gdesnews.png" alt="GDESNews Logo Red">
+                </div>
+                <div>
+                    <nav>
+                        <h1>Latest News</h1>
+                        <ul>
+                            <li><button class="pill" aria-label="Politics News">Politics</button></li>
+                            <li><button class="pill" aria-label="Sports News">Sports</button></li>
+                            <li><button class="pill pill-active" aria-label="Tech News">Tech</button></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div>
-                <nav>
-                    <h1>Latest News</h1>
-                    <ul>
-                        <li><button class="pill">Politics</button></li>
-                        <li><button class="pill">Sports</button></li>
-                        <li><button class="pill pill-active">Tech</button></li>
-                    </ul>
-                </nav>
-            </div>
+            <img id="computer" src="./gdes_news_images/icon-computer.png" alt="A faded red computer icon.">
         </section>
+
+
         <!-- headline section -->
         <section id="news-grid">
 
@@ -37,7 +42,7 @@
 
             <!-- Pizza -->
             <article class="news-article" id="pizza">
-                <img id="img-pizza" class="img-365" src="./gdes_news_images/pizza.png" alt="This is a golden computer microchip very close up">
+                <img id="img-pizza" class="img-365" src="./gdes_news_images/pizza.png" alt="Slices of pizza that have been cut next to some cherries.">
                 <div>
                     <h2>AI-Powered Robo-Pizza Chefs Are Taking Over the Fast Food Industry
                     </h2>
@@ -47,7 +52,7 @@
 
             <!-- Moon -->
             <article class="news-article" id="mars">
-                <img id="img-mars" class="img-365" src="./gdes_news_images/mars.png" alt="This is a golden computer microchip very close up">
+                <img id="img-mars" class="img-365" src="./gdes_news_images/mars.png" alt="A picture of mars, it looks like a white planet.">
                 <div>
                     <h2>NASA’s New Space Elevator Will Reach Mars in Just 2 Hours</h2>
                     <p>In a groundbreaking announcement, NASA has revealed plans for a space elevator that will connect Earth to Mars in under two hours. With this technology, interplanetary travel will become as easy as riding an elevator. However, before you pack your bags for the Red Planet, experts caution that such a project would require unimaginable advancements in materials science and engineering.</p>
@@ -56,10 +61,14 @@
 
             <!-- Coffee -->
             <article class="news-article" id="coffee">
-                <img id="img-coffee" class="img-365" src="./gdes_news_images/coffee.png" alt="This is a golden computer microchip very close up">
-                <div>
-                    <h2>World’s First Mind-Reading Coffee Machine Brews Your Perfect Cup of Joe</h2>
-                    <p>Imagine a world where your coffee machine knows exactly how you’re feeling and brews the perfect cup of coffee to match your mood. A new startup claims to have developed a coffee maker that can read your thoughts and preferences, delivering a customized caffeine experience. While it sounds enticing, critics argue that mind-reading technology of this caliber is far from being a reality.</p>
+                <div img-container>
+                    <img id="img-coffee" class="img-365" src="./gdes_news_images/coffee.png" alt="A cup of coffee with a foam design.">
+                </div>  
+                <div class="text-container">
+                    <div id="coffee-text">
+                        <h2>World’s First Mind-Reading Coffee Machine Brews Your Perfect Cup of Joe</h2>
+                        <p>Imagine a world where your coffee machine knows exactly how you’re feeling and brews the perfect cup of coffee to match your mood. A new startup claims to have developed a coffee maker that can read your thoughts and preferences, delivering a customized caffeine experience. While it sounds enticing, critics argue that mind-reading technology of this caliber is far from being a reality.</p>
+                    </div>
                 </div>
             </article>
 
@@ -101,14 +110,14 @@
                 </article>
         
                 <div class="link-button">
-                    <a href="#">Visit the GDES Program at NIC</a>
+                    <a href="#" aria-label="Visit Program">Visit the GDES Program at NIC</a>
                 </div>
             </section>
         </div>
         <footer>
-            <img class="logo-gdesnews" src="./gdes_news_images/logo-gdesnews-white.png" alt="">
+            <img class="logo-gdesnews" src="./gdes_news_images/logo-gdesnews-white.png" alt="White GDESNews Logo">
             <p>© 2023 NIC-GDES-252</p>
         </footer>
-    </div>
+    </main>
 </body>
 </html>
